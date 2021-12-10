@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Tushar</label>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a class="active" href="/login">Login</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <li><a href="/register">Registration</a></li>
+            </ul>
+        </nav>
+        <div class="form-box">
+            <button type="button" class="toggle-btn-form">Login Form</button>
+            <form id="login" class="input-group" action="/login" method="post">
+                <input type="text" class="input-field" placeholder="User Id" required name="userid">
+                <input type="password" class="input-field" placeholder="Enter Password" required name="password">
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+        </div>
+    </div>
+    </script>
+</body>
+
+</html>
